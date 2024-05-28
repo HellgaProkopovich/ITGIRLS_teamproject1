@@ -4,7 +4,6 @@
 body
   padding: 0
   margin: 0
-  
 
 .container
   display: grid
@@ -32,6 +31,32 @@ body
 
 .third-section
   grid-row: 3/4
+  align-self: center
+  display: flex
+  flex-direction: column-reverse
+  justify-items: center
+  position: relative
+  text-align: left
+  a
+    display: none
+  button
+    display: none
+  h2
+    order: -1
+    font-size: 3rem
+    margin: 3rem 2rem
+  p
+    order: -2
+    font-size: 2rem
+    line-height: 4rem
+    margin: 0 2rem
+.third-section__background
+  width: 100%
+.third-section__cup
+  width: 60%
+  position: absolute
+  left: 20%
+  bottom: 57%
 
 .cards-section
   grid-row: 4/5
