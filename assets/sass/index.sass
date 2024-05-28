@@ -1,0 +1,40 @@
+*
+  box-sizing: border-box
+
+body
+  padding: 0
+  margin: 0
+  
+
+.container
+  display: grid
+  grid-template-rows: 5% 1fr 2%
+
+.header
+  grid-row: 1/2
+
+.main
+  grid-row: 2/3
+  display: grid
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr
+
+.footer
+  grid-row: 3/4
+
+.aside
+  display: none
+
+.first-section
+  grid-row: 1/2
+
+.second-section
+  grid-row: 2/3
+
+.third-section
+  grid-row: 3/4
+
+.cards-section
+  grid-row: 4/5
+
+.map-section
+  grid-row: 5/6
