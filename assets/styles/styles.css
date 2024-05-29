@@ -76,6 +76,41 @@ body {
 
 .cards-section {
   grid-row: 4/5;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 275px;
+  min-height: 375px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  transition: 0.2s;
+  position: relative;
+  text-align: center;
+}
+
+.card-2,
+.card-1 {
+  box-shadow: 0px 10px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-3 {
+  box-shadow: 0px 10px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.for_large_screens {
+  display: none;
+}
+
+
+.card:hover {
+  box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.4);
 }
 
 .map-section {
