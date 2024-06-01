@@ -39,7 +39,6 @@ body {
   display: flex;
   flex-direction: column-reverse;
   justify-items: center;
-  position: relative;
   text-align: left;
   max-width: 100%;
 }
@@ -58,13 +57,27 @@ body {
   order: -2;
   font-size: 1.5rem;
   line-height: 4rem;
+  padding: 0 2rem;
+}
+
+.third-section__image-container {
+  max-width: 100%;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.third-section__cup-background {
+  width: 100%;
 }
 
 .third-section__cup {
   width: 60%;
   position: absolute;
   left: 10%;
-  bottom: 50%;
 }
 
 .cards-section {
