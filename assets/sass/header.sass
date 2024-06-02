@@ -1,13 +1,22 @@
 .header
     position: relative
 
-.menu-desktop__link
-    text-decoration: none
-    color: #3E3E3E
-    box-sizing: border-box
+.menu-desktop
+    padding: 0
+    margin: 0
+    list-style: none
 
-.menu-desktop__link:hover
-    color: #512BE7
+    &__link
+        text-decoration: none
+        color: #3E3E3E
+        box-sizing: border-box
+
+        &:hover
+            color: #512BE7
+
+    &__item
+        display: inline-block
+        margin-right: 25px
 
 .nav-container
     display: flex
@@ -17,15 +26,6 @@
 .logo
     height: 38px
     width: 236px
-
-.menu-desktop
-    padding: 0
-    margin: 0
-    list-style: none
-
-.menu-desktop_item
-    display: inline-block
-    margin-right: 25px
 
 .btn-nav
     display: inline-block
@@ -39,9 +39,9 @@
     color: #ffffff
     line-height: 45px
 
-.cofe_menu, .bar_button
+.cofe-menu, .bar-button
     display: none
 
 @media screen and (min-width: 769px)
-    .cofe_menu, .bar_button
+    .cofe-menu, .bar-button
         display: block
