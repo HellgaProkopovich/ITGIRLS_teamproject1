@@ -1,41 +1,48 @@
 /* отображается не совсем так же */
 @font-face
   font-family: "JosefinSans-SemiBold"
-  src: url("assets/fonts/JosefinSans-SemiBold") format("truetype")
+  src: url("assets/fonts/JosefinSans-SemiBold.ttf") format("truetype")
 
-/* шрифт отображается не корректно */
+/* шрифт отображается не корректно, вообще не так, как на макете */
   &
     font-family: "CedarvilleCursive-Regular"
-    src: url("assets/fonts/CedarvilleCursive-Regular") format("truetype")
+    src: url("assets/fonts/CedarvilleCursive-Regular.ttf") format("truetype")
 
   &
     font-family: "AlegreyaSans-Regular"
-    src: url("assets/fonts/AlegreyaSans-Regular") format("truetype")
+    src: url("assets/fonts/AlegreyaSans-Regular.ttf") format("truetype")
 
 /* шрифт не применяется */
   &
     font-family: "JosefinSans-Regular"
-    src: url("assets/fonts/JosefinSans-Regular") format("truetype")
+    src: url("assets/fonts/JosefinSans-Regular.ttf") format("truetype")
 
-// h1 - coffee shop, coffee shop samwayle, coffee of the day, our adress
-// h2 - americano, latte, espresso
 h1,
 h2
   font-family: "JosefinSans-SemiBold", Verdana, Geneva, Tahoma, sans-serif
 
-// h2
-//   font-size: 28px
+h1
+  font-size: 3.375rem
 
-/* шрифт отображается не корректно */
-.first-section p,
-.second-section a
-  text-decoration: none
+h2
+  font-size: 2.25rem
+
+.first-section__paragraph
   font-family: "CedarvilleCursive-Regular", Verdana, Geneva, Tahoma, sans-serif
   color: black
+  font-size: 1.1875rem
 
-p
+.ui-font_p
   font-family: "AlegreyaSans-Regular", Verdana, Geneva, Tahoma, sans-serif
+  font-size: 1.1875rem
+  // line-height: 2.25rem
+  line-height: 3rem
+  letter-spacing: 0.1%
+  color: #444A4A
 
 /* шрифт не применяется */
 .footer__copy
   font-family: "JosefinSans-Regular" Verdana, Geneva, Tahoma, sans-serif
+  font-size: 1.125rem
+  line-height: 2.8125rem
+  font-weight: 100
