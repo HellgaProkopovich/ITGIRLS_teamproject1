@@ -7,16 +7,26 @@
     align-items: center
     justify-content: center
     position: relative
-    max-width: 100%
 
 .card
     width: 21.1875rem
+    height: 28.625rem
     display: flex
     flex-direction: column
     border-radius: 1.25rem
     transition: 0.2s
     position: relative
     text-align: center
+
+    &__name
+        font-weight: 900
+        font-size: 1.75rem
+
+    &__p
+        font-weight: 400
+        font-size: 1.1875rem
+        line-height: 189%
+        letter-spacing: 0em
 
     &__2,
     &__1
@@ -25,8 +35,14 @@
     &__3
         box-shadow: 0px 10px 5px 3px rgba(0, 0, 0, 0.2)
 
-    &__btn
+    &__btn2,
+    &__btn1
         width: 14.6875rem
+        margin-top: 1.25rem
+
+    &__btn3
+        width: 14.6875rem
+        margin-top: 3.125rem
 
 .card:hover
     box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.4)
@@ -38,9 +54,13 @@
 @media screen and (min-width: 700px)
     .cards-section
         flex-direction: row
+        justify-content: space-around
+        flex-wrap: nowrap
+        background-color: #E3EBE7
 
     .card
         width: 21.25rem
+        background: white
 
     .for-small-screens
         display: none
