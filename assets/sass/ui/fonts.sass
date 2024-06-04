@@ -4,18 +4,18 @@
   src: url("assets/fonts/JosefinSans-SemiBold.ttf") format("truetype")
 
 /* шрифт отображается не корректно, вообще не так, как на макете */
-  &
-    font-family: "CedarvilleCursive-Regular"
-    src: url("assets/fonts/CedarvilleCursive-Regular.ttf") format("truetype")
+@font-face
+  font-family: "CedarvilleCursive-Regular"
+  src: url("assets/fonts/CedarvilleCursive-Regular.ttf") format("truetype")
 
-  &
-    font-family: "AlegreyaSans-Regular"
-    src: url("assets/fonts/AlegreyaSans-Regular.ttf") format("truetype")
+@font-face
+  font-family: "AlegreyaSans-Regular"
+  src: url("assets/fonts/AlegreyaSans-Regular.ttf") format("truetype")
 
 /* шрифт не применяется */
-  &
-    font-family: "JosefinSans-Regular"
-    src: url("assets/fonts/JosefinSans-Regular.ttf") format("truetype")
+@font-face
+  font-family: "JosefinSans-Regular"
+  src: url("assets/fonts/JosefinSans-Regular.ttf") format("truetype")
 
 h1,
 h2,
@@ -25,7 +25,7 @@ h2,
 h1
   font-size: 3.375rem
 
-h2
+h2,
 .menu__item
   font-size: 2.25rem
 
@@ -34,12 +34,16 @@ h2
   color: black
   font-size: 1.1875rem
 
+.card__name
+  font-size: 1.75rem
+  font-weight: 900
+
 .ui-font_p
   font-family: "AlegreyaSans-Regular", Verdana, Geneva, Tahoma, sans-serif
   font-size: 1.1875rem
-  // line-height: 2.25rem
-  line-height: 3rem
-  letter-spacing: 0.1%
+  font-weight: 400
+  line-height: 189%
+  letter-spacing: 0em
   color: #444A4A
 
 /* шрифт не применяется */
