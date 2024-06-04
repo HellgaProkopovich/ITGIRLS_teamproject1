@@ -1,6 +1,26 @@
 .menu__toggle
     opacity: 0
 
+    &:checked
+
+        & ~ .menu__btn > span
+            transform: rotate(45deg)
+
+        & ~ .menu__btn > span::before
+            top: 0
+            transform: rotate(0)
+
+        & ~ .menu__btn > span::after
+            top: 0
+            transform: rotate(90deg)
+
+        & ~ .menu__box
+            visibility: visible
+            left: 0
+
+        & ~ .menu__btn > .menu__logo
+            visibility: visible
+
 /* "кнопка" бургер меню */
 .menu__btn
     display: flex
@@ -23,9 +43,11 @@
         background-color: #141414
         transition: 0.3s
         z-index: 1
+
     & > span::before
         content: ''
         top: -0.5rem
+
     & > span::after
         content: ''
         top: 0.5rem
@@ -44,7 +66,7 @@
     height: 100%
     max-height: 100%
     margin: 0
-    padding: 3rem 0
+    padding: 11rem 0 0rem 0
     list-style: none
     text-align: center
     background-color: #FFFFFF
@@ -52,40 +74,31 @@
     transition: 0.3s
     z-index: 3
 
+    /* иконки внизу меню */
+    &__icons
+        margin: 4.68rem 0 0 0
+
+        &_img
+            width: 2.8125rem
+            margin: 1rem
+
+    &__line
+        margin: 0 7.5rem 0 7.5625rem
+        width: 8.375rem
+        border-bottom: 0.3125rem solid #000000
+        border-radius: 5%
+
 /* пункты бургер-меню */
 
 .menu__item
     display: block
-    padding: 0.8rem 1.4rem
+    padding: 0 1.4rem
     color: #333
-    font-weight: 600
     text-decoration: none
     transition: background 0.3s
 
-    &:hover
-        color: #2D635E
-
-/* транформация/открытие меню */
-
-.menu__toggle:checked ~ .menu__btn > span
-    transform: rotate(45deg)
-
-.menu__toggle:checked ~ .menu__btn > span::before
-    top: 0
-    transform: rotate(0)
-
-.menu__toggle:checked ~ .menu__btn > span::after
-    top: 0
-    transform: rotate(90deg)
-
-.menu__toggle:checked ~ .menu__box
-    visibility: visible
-    left: 0
-
-/* Строчка для лого, чтобы его было видно при открытии меню */
-
-.menu__toggle:checked ~ .menu__btn > .menu__logo
-    visibility: visible
+.item_last
+    font-weight: 600
 
 /* Позиционирование лого */
 .menu__logo
@@ -94,13 +107,6 @@
     left: 6.625rem
     width: 10.1875rem
     visibility: hidden
-
-/* иконки внизу меню */
-.menu__box__icons
-    margin: 2rem
-
-    &__icons_img
-        width: 2.8125rem
 
 @media screen and (min-width: 700px)
     .burger-menu
