@@ -10,13 +10,39 @@
 
     &__copy
         text-align: center
-        margin: 15%
 
 .address
     &__section
         text-align: center
         font-style: normal
 
-    // &__btn
-    //     width: 80%
-    //     height: 30% - если не назначать щирину/высоту, то кнопка нормально отображается
+@media screen and (max-width: 699px)
+    .ui-font-large-screens
+        display: none
+
+@media screen and (min-width: 700px)
+    .footer
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 10%
+        margin-left: 5%
+
+        &__map
+            width: 45.475rem
+            height: 25.9375rem
+
+        &__copy
+            grid-column: 1/3
+
+    .address
+        &__section
+            text-align: left
+            font-style: normal
+        
+        &__btn
+            display: none
+    
+   
+
+
+    
