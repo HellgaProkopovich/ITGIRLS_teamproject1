@@ -1,4 +1,4 @@
-/* отображается не совсем так же */
+/* шрифт отображается не совсем так же */
 @font-face
   font-family: "JosefinSans-SemiBold"
   src: url("assets/fonts/JosefinSans-SemiBold.ttf") format("truetype")
@@ -12,29 +12,47 @@
   font-family: "AlegreyaSans-Regular"
   src: url("assets/fonts/AlegreyaSans-Regular.ttf") format("truetype")
 
-/* шрифт не применяется */
+/* шрифт применяется не корректно */
 @font-face
   font-family: "JosefinSans-Regular"
   src: url("assets/fonts/JosefinSans-Regular.ttf") format("truetype")
 
+@font-face
+  font-family: "GeorgeRoundedRegular.ttf"
+  src: url("assets/fonts/GeorgeRoundedRegular.ttf") format("truetype")
+
 h1,
-h2,
-.menu__item
+h2
   font-family: "JosefinSans-SemiBold", Verdana, Geneva, Tahoma, sans-serif
+  color: rgba(0, 0, 0, 1)
 
 h1
   font-size: 3.375rem
+
+@media screen and (min-width: 700px)
+  h1
+    font-size: 3.9375rem
 
 h2,
 .menu__item
   font-size: 2.25rem
 
-.first-section-text__paragraph
+.first-section-text__paragraph,
+.menu__item
   font-family: "CedarvilleCursive-Regular", Verdana, Geneva, Tahoma, sans-serif
-  color: black
+  color: rgba(68, 74, 74, 1)
   font-size: 1.1875rem
 
+.ui-font_follow
+  font-family: "AlegreyaSans-Regular", Verdana, Geneva, Tahoma, sans-serif
+  font-size: 1.75rem
+
+@media screen and (min-width: 700px)
+  .first-section-text__paragraph
+    font-size: 1.75rem
+
 .card__name
+  font-family: "JosefinSans-SemiBold", Verdana, Geneva, Tahoma, sans-serif
   font-size: 1.75rem
   font-weight: 900
 
@@ -46,9 +64,13 @@ h2,
   letter-spacing: 0em
   color: #444A4A
 
-/* шрифт не применяется */
-.footer__copy
-  font-family: "JosefinSans-Regular" Verdana, Geneva, Tahoma, sans-serif
+.footer__copy,
+.menu-desktop__link
+  font-family: "JosefinSans-Regular", Verdana, Geneva, Tahoma, sans-serif
   font-size: 1.125rem
   line-height: 2.8125rem
   font-weight: 100
+
+@media screen and (min-width: 700px)
+  .footer__copy
+    font-size: 1.1875rem
