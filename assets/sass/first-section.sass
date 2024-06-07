@@ -41,16 +41,20 @@
 
     .first-section-arrow
         grid-column: 2/3
-        justify-self: end
-        align-content: end
+        display: flex
+        width: 9.8125rem
+        justify-content: end
+        align-items: end
 
         &__link
+            width: 9.8125rem
+            height: 9.9375rem
+            border: none
+            border-radius: 0rem
             background-color: #E3EBE7
 
         &__arrow
-            width: 9.8125rem
-            height: 9.9375rem
-            background-color: #E3EBE7
+            padding: 4.1875rem
 
     .first-section-image
         grid-column: 3/4
@@ -68,3 +72,14 @@
     .aside
         grid-column: 4/5
         display: flex
+        flex-direction: column
+        justify-content: end
+
+        &__paragraph
+            writing-mode: vertical-rl
+            transform: rotate(180deg)
+
+        .aside-link
+            list-style-type: none
+            margin: 0
+            padding-left: 1rem
