@@ -18,7 +18,12 @@
         top: 2rem
         left: 2rem
 
+    a
+        display: none
+
 .text-second-section
+    position: relative
+
     h2
         margin: 2rem 2rem
 
@@ -28,6 +33,8 @@
 @media screen and (min-width: 700px)
     .second-section-container
         flex-direction: row
+        margin-left: 7.5 
+        margin-right: 12rem
 
     .images-second-section
         width: 40%
@@ -40,3 +47,14 @@
     .images-second-section img:nth-child(2)
         right: -10%
         bottom: -10%
+
+    a
+        display: block
+        text-decoration: none
+        color: black
+        position: absolute
+        top: -24px
+        right: 0
+        background-color: rgba(255, 255, 255, 0.7); /* Прозрачный белый фон для лучшей видимости */
+        padding: 10px
+        font-style: Cedarville Cursive, sans-serif
