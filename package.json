@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-prod": "sass ./assets/sass/index.sass ./assets/styles/styles.css",
+    "buil d-prod": "sass ./assets/sass/index.sass ./assets/styles/styles.css",
     "build-watch": "sass --watch ./assets/sass/index.sass ./assets/styles/styles.css"
   },
   "repository": {
