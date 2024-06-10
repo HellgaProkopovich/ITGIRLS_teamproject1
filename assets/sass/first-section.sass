@@ -19,13 +19,16 @@
 .first-section-image
     display: none
 
+.first-section-arrow
+    display: none
+
 .aside
     display: none
 
 @media screen and (min-width: 700px)
     .first-section
         display: grid
-        grid-template-columns: 1fr 9.8125rem 25.625rem 5%
+        grid-template-columns: 1fr 9.8125rem 25.625rem 4.5rem
         padding-right: 7.5rem
         padding-left: 7.5rem
 
@@ -51,7 +54,7 @@
             height: 9.9375rem
             border: none
             border-radius: 0rem
-            background-color: #E3EBE7
+            background-color: rgba(227, 235, 231, 0.4)
 
         &__arrow
             padding: 4.1875rem
@@ -78,8 +81,15 @@
         &__paragraph
             writing-mode: vertical-rl
             transform: rotate(180deg)
+            padding-bottom: 0.875rem
+            margin: 0
+            padding-right: 2.75rem
 
         .aside-link
             list-style-type: none
             margin: 0
-            padding-left: 1rem
+            padding-left: 2.5rem
+
+            &__icon
+                width: 2rem
+                height: 2rem
