@@ -13,34 +13,31 @@
     border-radius: 1.25rem
     text-align: center
 
-    &__2,
-    &__1
+    &_content
+        margin-top: 1.25rem
+
+    &_text
+        padding-inline: 3.6875rem
+        margin-top: 1.875rem
+
+    &_with-shadow
         box-shadow: 0px 10px 5px 10px rgba(0, 0, 0, 0.2)
 
-    &__3
+    &_with-shadow-other
         box-shadow: 0px 10px 5px 3px rgba(0, 0, 0, 0.2)
 
 .card__p
     padding: 0 25px 0px 25px
 
-.card:hover
-    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.4)
-
-@media screen and (max-width: 699px)
-    .card__btn2,
-    .card__btn1
+    &_btn
         width: 15.25rem
         margin-top: 1.25rem
 
-    .card__btn3
-        width: 15.25rem
-        margin-top: 3.125rem
+.for-large-screens
+    display: none
 
-    .for-large-screens
-        display: none
-
-    .arrow
-        display: none
+.arrow
+    display: none
 
 @media screen and (min-width: 700px)
     .cards-section
@@ -52,18 +49,19 @@
         background: white
         box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2)
 
-        &__btn1,
-        &__btn2
+        &_btn
             width: 14.6875rem
-            margin-top: 1.875rem
 
-        &__btn3
-            width: 14.6875rem
-            margin-top: 4.120rem
+    .card:hover
+        box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.4)
 
     .for-small-screens
         display: none
 
+    .for-large-screens
+        display: inline
+
     .arrow
+        display: block
         border: 0rem
         background-color: #E3EBE7
