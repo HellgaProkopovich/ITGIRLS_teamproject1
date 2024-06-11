@@ -14,9 +14,9 @@
 
     img:nth-child(2)
         position: absolute
-        width: 85%
-        top: 2rem
-        left: 2rem
+        width: 95%
+        top: -1.2rem
+        left: 0.8rem
 
 .second-section-link
     display: none
@@ -33,29 +33,29 @@
 @media screen and (min-width: 700px)
     .second-section-container
         flex-direction: row
-        margin-left: 7.5
-        margin-right: 12rem
+        margin-left: 7.5rem
+        margin-top: 2.5rem
+        margin-right: 8rem
 
     .images-second-section
-        width: 40%
+        width: 23.75rem
         height: auto
-        margin-bottom: 0
+        margin-top: 4%
 
-    .text-second-section
-        width: 60%
-
-    .images-second-section img:nth-child(2)
-        right: -10%
-        bottom: -10%
+        img:nth-child(2)
+            width: 100%
+            position: absolute
+            top: 17%
+            left: 5%
 
     .second-section-link
         display: block
-        // text-decoration: none
-        // color: black
+        writing-mode: vertical-rl
+        transform: rotate(180deg)
         position: absolute
-        top: -24px
-        right: 0
-        background-color: rgba(255, 255, 255, 0.7)
-        /* Прозрачный белый фон для лучшей видимости */
-        padding: 10px
-        // font-style: Cedarville Cursive, sans-serif
+        top: -1.25rem
+        right: 21rem
+
+    .text-second-section
+        width: 60%
+        margin-left: 6.4375rem
